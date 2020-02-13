@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background2" >
+
+        <TextView
+            android:id="@+id/labelutm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="MENU LOGIN"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelslmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelutm"
+            android:layout_marginTop="7dp"
+            android:text="Username"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelutm"
+            android:layout_toRightOf="@+id/labelslmt"
+            android:inputType="text" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/labelshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelslmt"
+            android:layout_marginTop="15dp"
+            android:text="Password"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_toRightOf="@+id/labelshow"
+            android:inputType="textPassword" >
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/groupjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelshow"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupjk"
+            android:layout_marginTop="33dp"
+            android:layout_toRightOf="@+id/labelshow"
+            android:text="LOGIN"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnlogin"
+            android:layout_alignBottom="@+id/btnlogin"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/btnlogin"
+            android:text="EXIT"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

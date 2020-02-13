@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="401dp"
+        android:background="@drawable/background2" >
+
+        <TextView
+            android:id="@+id/labelutm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="MENU UTAMA"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/groupjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelshow"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/labelslmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelutm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="Selamat Datang Di Menu Utama"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelslmt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="Selamat Datang Admin"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupjk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="78dp"
+            android:text="EXIT"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
